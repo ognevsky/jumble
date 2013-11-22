@@ -1,5 +1,2 @@
-require "jumble/version"
-
-module Jumble
-  # Your code goes here...
-end
+require 'jumble/rest/client'
+require 'jumble/version'
