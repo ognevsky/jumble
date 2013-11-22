@@ -4,13 +4,13 @@ module Jumble
   module REST
     class Client < BasicObject
 
+      private
+
       def client
         # FIXME We should implement something more complex
         # than stupid clients mixing
         clients.sample
       end
-
-      private
 
       def clients
         # FIXME Actually we should load YAML config file here
