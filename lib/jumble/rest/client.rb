@@ -22,7 +22,7 @@ module Jumble
 
       def method_missing(name, *args, &block)
         client.send(name, *args, &block)
-      rescue ::Twitter::Error::TooManyRequests, ::Twitter::Error::Forbidden
+      rescue ::Twitter::Error::TooManyRequests
         # FIXME We should not use these infinite retries
         retry
       end
