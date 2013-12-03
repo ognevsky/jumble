@@ -1,0 +1,7 @@
+Description:
+  Generates basic config file to get you up and running the Jumble gem
+
+Examples:
+  rails generate jumble:install
+
+  This will generate the config file in your config/ directory.
