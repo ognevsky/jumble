@@ -18,7 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Generate a sample config file:
+
+    $ rails generate jumble:install
+
+Then open `config/jumble.yml` and fill it out with your twitter credentials.
+
+And you are ready to go!
+
+    client = Jumble::REST::Client.new
+    client.followers('gem')
+
+You can use any of twitter (https://github.com/sferik/twitter) commands, we just proxy them.
 
 ## Contributing
 
